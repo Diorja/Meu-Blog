@@ -21,19 +21,20 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 16px;
-        
             display: flex;
         }
         img{
-            width: 80px;
-            height: 80px;
+            width: 200px;
+            height: 200px;
         }
         .autor{
             font-weight: bold;
         }
-        .p{
-            
-        }
+       button{
+        width: 80px;
+        height: 40px;
+        border: 1px solid #0c0303;
+       }
     </style>
 </head>
 <body>
@@ -47,8 +48,18 @@
         <h2>Vem para a melhor da cidade!</h2>
         <p class="autor"> Por: Diorja Lorenzete</p>
         <p> Variedades em bebidas, doces e presentes!</p>
+        <button>❤️<span>0</span>​</button>
     </div>
     </main>
     
 </body>
+<script>
+    const botao = document.querySelector("button");//variável para acessar o botão
+    botao.addEventListener("click", botaoClicado);//comentar o que significa essa linha do código
+    function botaoClicado() {//comentar o que significa essa linha do código
+console.log("fui clicado");//comentar o que significa essa linha do código
+let texto = botao.querySelector("span");//comentar o que significa essa linha do código
+texto.textContent++;//comentar o que significa essa linha do código
+}
+</script>
 </html>
